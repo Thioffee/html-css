@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Vídeo</title>
+</head>
+<body>
+    <h1>Vídeos do servidor local</h1>
+    <p>A seguir um teste com vídeo hospedado no meu próprio computador</p>
+
+    <!--*******<video src="midia/vid_teste_leve.mp4" width="400" controls loop></video>********** 
+
+    <!-- O vídeo irá aparecer no site de acordo com seu tamanho (que normalmente é bem grande)-->
+    <!-- width="400" [CSS] vai diminuir seu tamanho visível, mas ainda pesa o mesmo tanto no site-->
+
+    <video controls width="560" poster="imagem/cafe_img.jpg"> <!-- poster aplica uma thumb para o vídeo-->
+        <source src="midia/vid_teste_leve.mp4" type="video/mp4">
+        <source src="midia/vid_teste_web.webm" type="video/webm">
+        <source src="midia/vid_teste.mp4" type="video/mp4">
+        <source src="midia/vid_teste_ogv.ogv" type="video/ogv">
+        <p>Se tudo deu ruim esse parágrafo ta aparecendo, o video seria <a href="midia/vid_teste_leve.mp4">esse aqui</a></p>
+    </video>
+    <!-- Vídeos inseridos no site através da tag video consomem muito! (arquivos são muito grandes, e isso pesa no bolso na hora de hospedar o site.)-->
+    <!-- Por isso, vale muito mais incorporar videos de outras plataformas no site! (Youtube, twitch, instagram, etc)-->
+
+
+    <h1>Vídeos de outras plataformas</h1>
+    
+    <h2>Youtube</h2>
+    <p>Esse vídeo não está no meu computador, mas sim no youtube</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/MJbE3uWN9vE?si=Tvx-jUa2g1dJwDSL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+    <h2>Vimeo</h2>
+    <p>Esse video vem da plataforma Vimeo, que possui uma qualidade de vídeo melhor, e é mais profissional<br> (porém o algoritmo não é tão bom quanto youtube e irá travar mais, exigindo uma boa internet de quem for assistir)</p>
+    <iframe src="https://player.vimeo.com/video/349111588?h=6a90f22121&color=FFFFFf&title=0&byline=0&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

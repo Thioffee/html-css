@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le fonté</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            /* Font-family testa a fonte da primeira até a última
+            será usada a primeira que funcionar, sans-serif (sem serifa) e serif (com serifa) são padrão, para sempre funcionar, é escolhida uma fonte serifada ou não aleatória! */
+
+            /*Medidas Absolutas: 
+
+	            cm, mm, in, px, pt, pc
+
+            Medidas Relativas:
+            
+	            em	->	relativo ao tamanho natural da fonte
+	            ex	->	relativo a altura x da fonte
+	            rem	->	tipo em, mas relativo a fonte configurada no body
+	            vw	->	relativo a largura da view port
+	            vh	->	relativo a altura da view port
+	            %	->	porcentagem
+
+            Recomendação w3c:  "px" ou "em"
+
+            Altura padrão:  16px ou 1em */
+        }
+        h1 {
+            /*font-family:'Courier New', Courier, monospace;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;*/
+            /* shorthand font
+            - font-style* --> font-weight --> font-size --> font-family */
+            font: italic bolder 3em 'Courier New', Courier, monospace;
+            /* font engloba os outros 4, gerando o mesmo resultado em ambos */ 
+        }
+
+        h2 {
+            font: lighter 2em serif
+        }
+    </style>
+</head>
+<body>
+    <h1>Experimentando Fontes</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum error labore suscipit tempora eveniet iure voluptates ducimus vero? Obcaecati natus ab facere impedit sint deleniti sed suscipit exercitationem. Repellendus aut facilis voluptates fugit sunt suscipit et quos harum expedita. Distinctio, officia tempore minus provident ex blanditiis accusantium minima repellendus quisquam.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas harum vero corporis voluptatem in, nihil et repellat non aspernatur quae tempore, commodi facere doloribus rem.</p>
+    <h2>O tal do subtítulo</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores facere, at harum ut illum nisi. Quaerat velit tempora neque quod harum veritatis in quisquam reiciendis facilis deserunt optio rerum inventore odit ab iure quis voluptas pariatur fugiat, amet eos ipsam.</p>
+</body>
+</html>

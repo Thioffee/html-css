@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover</title>
+    <style>
+        /* pseudo-class -> Usada para definir um estado especial de um elemento. */
+        /* selecione um texto e aperte CTRL + ; para comentá-lo */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div:hover{
+            color: rgb(42, 147, 165);
+        }
+
+        div > p {  /* O ">" para indicar que só ira alterar o "p" dentro da div (p filho da div) */
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+            background-color: chocolate;
+            width: 300px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste Hover</h1>
+    <p>Tente passar o mouse no texto abaixo</p>
+    <div>Passa o mouse aqui!
+        <p>Estou escondido não me acharão.</p>
+    </div>
+    <p>Fim</p>
+</body>
+</html>

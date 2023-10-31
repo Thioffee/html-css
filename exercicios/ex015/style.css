@@ -1,0 +1,18 @@
+@charset "UTF-8";
+/* Esse @ no começo são regras para o CSS, @charset é uma delas, essa por exemplo é para compatibilidade
+com acentos, como no português*/
+
+body {
+    background-color: burlywood;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+h1 {
+    color:brown;
+}
+h2 {
+    color:coral;
+}
+p {
+    text-align: justify;
+}

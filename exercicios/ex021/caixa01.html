@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixa (Box Model)</title>
+    <style>
+
+        /* No DevTools o conteúdo(Content) aparece largura x altura */
+
+
+
+        h1{ /*Box-level*/
+
+            background-color: cadetblue;
+            height: 300px;
+            width: 300px;
+            border: 10px solid crimson;
+
+            /* padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px; */
+            padding: 10px;
+            /* Se deixar o padding com dois valores, o primeiro será o valor do padding cima e baixo e o segundo  da 
+            direta e esquerda */
+
+            margin: 20px auto 40px auto;
+            /* margin: auto Posiciona a caixa no meio da tela horizontalmente, se adaptando ao tamanho da janela */
+
+            /* outline-width: 5px;
+            outline-style: double;
+            outline-color: blueviolet; */ 
+            outline: 5px double blueviolet;
+
+        }
+
+        
+        a { /*Inline-level*/
+
+            border: 10px groove blueviolet;
+            padding: 5px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Experimentando caixas box-level</h1>
+    <p>Parágrafo é um box-level, porém <a href="#">links</a> são do tipo inline!</p>
+</body>
+</html>

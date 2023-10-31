@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias HTML</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Faça o teste abrindo o site em plataformas diferentes (computador, celular, tv, etc)<br>
+        ou diminua o tamanho da tela para analisar a mudança!
+    </p>
+    <picture> <!--Source deve ser usado dentro da tag <picture>-->
+        <source media="(max-width: 750px)" srcset="imagens/imagem-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/imagem-m.png" type="image/png">
+        <!-- Largura máxima é 1050, quando chegar a essa largura a imagem será trocada para a média, se
+        chegar aos 750px de largura a imagem será a pequena-->
+        <!--Ordem dos sources é importante!! Para funcionar corretamente coloque a menor primeiro-->
+        <img src="imagens/imagem-g.png" alt="imagem_grande_exemplo">
+    </picture>
+    <h1>Reprodução de Áudio</h1>
+    <p>Confira agora a reprodução de uma música utilizando HTML5</p>
+    <!--<audio src="midia/nobody.mp3" controls></audio> <!-- Se adicionar autoplay na tag audio será reproduzido o áudio automaticamente, tag controls para aparecer a interface de interação com audio-->
+
+    <audio preload="metadata" controls> <!-- Outro método-->  
+        <!-- parametro loop para deixar a música em loop-->
+        <!-- preload="metadata" carrega apenas alguns informações do áudio (tempo, nome arquivo, etc)-->
+        <!-- preload sem nada ou com auto pesa muito o site pois carrega o site e a música tudo junto-->
+
+        
+        <!-- Para caso um formato de áudio não funcione será tentado os outros-->
+        <!--Não tem o ogg e wav na pasta (apenas para exemplo)-->
+        <source src="midia/nobody.mp3" type="audio/mpeg">
+        <source src="midia/nobody.ogg" type="audio/ogg">
+        <source src="midia/nobody.wav" type="audio/wav">
+        <!--O parágrafo de baixo só irá aparecer se nenhuma das opções a cima funcionar-->
+        <p>Não foi possível reproduzir a música <a href="midia/nobody.mp3">aperte aqui</a> para realizar o download!</p>
+    </audio>
+</body>
+</html>
+
+<!--[Sobre a tag source]-->
+<!--*type = media type que será usado
+    *srcset = nome da imagem que será carregada
+    *media = indica tamanho máximo para carregar a imagem inserida (no srcset)
+-->
