@@ -3,21 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
-            margin: 0px;
-            height: 100vh;
+            /*
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
-            background-position: center top;
-            background-repeat:no-repeat;
-            background-size:cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            */
+
+            margin: 0px;
+            height: 100vh;
+            background-size: cover;
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+
+            /* Shorthand - backgrouund
+            
+            Color > image > position > repeat > [size] > attachment
+            */
+            /* size na shorthand não está funcionando nesse exemplo, por isso foi declarado separado */
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 2px solid black;
@@ -29,6 +41,9 @@
     <main>
         <h1>Teste de Imagem de Fundo</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam vel quidem similique tempore, reiciendis vitae deserunt corrupti eaque quam eius tempora dicta nemo officiis alias saepe qui praesentium at ullam lorem Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae, nostrum ea! Itaque temporibus omnis, odit architecto quidem dolore quaerat accusamus ut officiis repellat rem delectus officia ducimus vitae necessitatibus. Quasi?Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos deserunt sunt tempore voluptatum eos minima reiciendis adipisci! Quibusdam blanditiis dignissimos fuga magni mollitia commodi quas amet nobis eum, illo <consectetur class="lorem">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit omnis repellendus dignissimos iure saepe veniam accusantium nulla nostrum, at exercitationem alias eligendi, doloribus enim, amet a praesentium non quasi labore Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi sapiente consequuntur tenetur quas incidunt quod. Labore vero exercitationem, praesentium repudiandae ab modi harum aut aspernatur corrupti alias reprehenderit porro hic. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat tempore at eos corrupti pariatur voluptas laudantium voluptatibus, aspernatur ad totam obcaecati iusto harum incidunt quam sapiente numquam temporibus. Exercitationem, odio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque neque provident aut, earum ad velit cupiditate aperiam est rem excepturi voluptatum dignissimos quos perspiciatis! Laborum laboriosam iste consectetur voluptas assumenda?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum velit dolore esse fugit, nobis voluptatum asperiores cumque atque dignissimos provident cupiditate? Tempore quas sint odit consequatur alias fuga accusantium ut. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde suscipit culpa vitae, quidem at saepe itaque repellat quisquam architecto aliquid sed distinctio. Consectetur iusto reiciendis numquam, exercitationem esse soluta laborum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quas delectus blanditiis ipsam soluta a dolores, perspiciatis, dicta repellat similique nesciunt sequi magni minima alias facilis optio et magnam sunt!</p>
     </main>
 </body>
 </html>
