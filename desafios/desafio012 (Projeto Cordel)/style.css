@@ -7,18 +7,57 @@
     src: url('fontes/Sriracha-Regular.ttf') format('truetype');
 }
 
+* {
+    margin: 0;
+}
+
+
 body {
+    background-color:white;
+}
+
+header {
     background-color: black;
+    padding: 50px;
 }
 
-h1 {
-    font-family: 'PassionOne', sans-serif;
-    text-align: center;
+header > h1 {
+    font-family: 'PassionOne';
+    font-weight: bold;
     color: white;
+    font-size: 150px;
+    text-align: center;
 }
 
-p {
-    font-family: 'Sriracha', cursive;
-    text-align: center;
+header > p {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: white;
+    text-align: center;
+}
+
+section.texto {
+    font-family: 'Sriracha';
+}
+
+section.imagem {
+    font-family: "Sriracha";
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
