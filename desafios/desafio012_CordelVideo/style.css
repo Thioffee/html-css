@@ -1,7 +1,18 @@
 @charset "UTF-8";
 
-pre {
-    white-space: pre-line;
+@font-face {
+    font-family: 'PassionOne';
+    src: url('fontes/PassionOne-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Sriracha';
+    src: url('fontes/Sriracha-Regular.ttf') format('truetype');
+}
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'PassionOne', cursive;
+    --fonte3: 'Sriracha', cursive;
 }
 
 * {
@@ -12,6 +23,7 @@ pre {
 html, body {
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 
 header {
@@ -24,6 +36,8 @@ header > h1 {
     padding-top: 50px;
     font-variant: small-caps; /* Transforma as letras em maiúsculas mantendo
     a primeiras letra de cada palavara maior */ 
+    font-family: var(--fonte2);
+    font-size: 10vw;
 }
 
 header > p {
@@ -45,6 +59,7 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding: 30px;
+    font-size: 3.4vw;
 }
 
 section.normal {
@@ -59,7 +74,12 @@ section.imagem {
 
 section.imagem pre {
     background-color: rgba(0, 0, 0, 0.315);
-    width: 400px;
+    display: inline-block;
+}
+
+pre {
+    white-space: pre-line;
+    font-family: var(--fonte3);
 }
 
 footer {
